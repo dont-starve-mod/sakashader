@@ -1,0 +1,11 @@
+<!-- book of shader -->
+
+<script type="text/javascript" src="./glsl.js"></script>
+
+<canvas id="canvas" class="glslCanvas" data-fragment-url="./shader.frag" width="512" height="512" data-textures="./0.texture" style="margin: 60px 60px;"></canvas>
+
+<script type="text/javascript">
+	let c = document.getElementById("canvas");
+	c.setAttribute("data-fragment-url", c.getAttribute("data-fragment-url") + "?t=" + new Date().getTime());
+	c.setAttribute("data-textures", c.getAttribute("data-textures") + "?t=" + new Date().getTime());
+</script>
